@@ -26,7 +26,6 @@
         <a href="#services">Услуги</a>
         <a href="#projects">Проекты</a>
         <a href="#map-section">География</a>
-        <a href="#viewer3d">3D Тур</a>
         <a href="#advantages">Преимущества</a>
         <a href="#contact">Контакты</a>
       </nav>
@@ -287,41 +286,6 @@
       </div>
     </section>
 
-    <section class="section section--viewer" id="viewer3d">
-      <div class="container">
-        <div class="section__header">
-          <span class="section__tag">Интерактив</span>
-          <h2>3D-тур по реализованным проектам</h2>
-          <p>Выберите объект из списка и осмотрите архитектурную модель. Вращайте, приближайте и изучайте детали.</p>
-        </div>
-        <div class="viewer3d">
-          <aside class="viewer3d__sidebar">
-            <p class="viewer3d__sidebar-title">Объекты</p>
-            <div class="viewer3d__list" id="viewer3dList"></div>
-          </aside>
-          <div class="viewer3d__main">
-            <div class="viewer3d__canvas-wrap" id="viewer3dCanvasWrap">
-              <canvas id="viewer3dCanvas"></canvas>
-              <div class="viewer3d__loader" id="viewer3dLoader">
-                <span class="viewer3d__loader-spin"></span>
-                Загрузка 3D-сцены…
-              </div>
-              <div class="viewer3d__hints">
-                <span>Вращение — ЛКМ</span>
-                <span>Масштаб — колесо</span>
-                <span>Сдвиг — ПКМ</span>
-              </div>
-            </div>
-            <div class="viewer3d__info" id="viewer3dInfo">
-              <h3 id="viewer3dTitle">—</h3>
-              <p class="viewer3d__meta" id="viewer3dMeta"></p>
-              <p id="viewer3dDesc"></p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
     <section class="section section--alt" id="advantages">
       <div class="container">
         <div class="section__header">
@@ -443,7 +407,6 @@
         <a href="#about">О компании</a>
         <a href="#services">Услуги</a>
         <a href="#map-section">География</a>
-        <a href="#viewer3d">3D Тур</a>
         <a href="#contact">Контакты</a>
         <a href="assets/presentation.pdf" download>Презентация</a>
       </div>
@@ -451,17 +414,8 @@
     </div>
   </footer>
 
-  <script type="importmap">
-  {
-    "imports": {
-      "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
-      "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"
-    }
-  }
-  </script>
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
   <script src="js/main.js"></script>
   <script src="js/map.js"></script>
-  <script type="module" src="js/viewer3d.js"></script>
 </body>
 </html>
