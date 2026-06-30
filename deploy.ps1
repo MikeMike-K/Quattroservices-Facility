@@ -16,4 +16,4 @@ Write-Host "  2. Перетащите файл qsfm-website.zip в окно бр
 Write-Host "  3. Сайт получит адрес вида https://random-name.netlify.app"
 Write-Host ""
 Start-Process "https://app.netlify.com/drop"
-Start-Process explorer.exe -ArgumentList "/select,`"$zip`""
+Start-Process explorer.exe -ArgumentList "/select,$zip"
