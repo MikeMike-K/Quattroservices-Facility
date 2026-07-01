@@ -91,7 +91,7 @@ function initMap() {
       radius: office.hq ? 10 : 7,
       color: '#ffffff',
       weight: 2,
-      fillColor: office.hq ? '#c41e3a' : '#1a1a1a',
+      fillColor: office.hq ? '#e30613' : '#1a1a1a',
       fillOpacity: 0.95,
     }).addTo(mapInstance);
 
